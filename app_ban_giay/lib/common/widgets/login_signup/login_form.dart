@@ -1,12 +1,10 @@
 import 'package:app_ban_giay/features/authentication/controllers/login/login_controller.dart';
 import 'package:app_ban_giay/features/authentication/screens/password/forget_pass.dart';
-import 'package:app_ban_giay/navigation_menu.dart';
 import 'package:app_ban_giay/utils/constants/sizes.dart';
 import 'package:app_ban_giay/utils/constants/text_strings.dart';
 import 'package:app_ban_giay/utils/validators/validation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:iconsax/iconsax.dart';
 
 class LoginForm extends StatelessWidget {

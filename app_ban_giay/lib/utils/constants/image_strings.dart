@@ -24,6 +24,7 @@ class TImages {
       "assets/images/on_boarding_images/verifysuccess.gif";
   static const String emailSend = "assets/images/on_boarding_images/data.gif";
   static const String loading = "assets/images/on_boarding_images/loading.gif";
+  static const String loadingsearch = "assets/images/animations/loadingsearch.json";
 
   //Reset pass
   static const String resetPassword =

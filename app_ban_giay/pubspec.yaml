@@ -19,7 +19,7 @@ dependencies:
   http: ^1.2.1
   lottie: ^2.7.0
   logger: ^2.2.0
-  connectivity_plus: ^5.0.2
+  connectivity_plus: ^5.0.1
   url_launcher: ^6.2.5
   flutter_native_splash: ^2.3.11
   smooth_page_indicator: ^1.1.0
@@ -47,6 +47,11 @@ dependencies:
 
   dio: ^5.4.2+1
   shared_preferences: ^2.2.3
+  google_sign_in: ^6.2.1
+  shimmer: ^3.0.0
+  image_picker: ^1.1.0
+  firebase_storage: ^11.7.4
+  cached_network_image: ^3.3.1
 
 
 

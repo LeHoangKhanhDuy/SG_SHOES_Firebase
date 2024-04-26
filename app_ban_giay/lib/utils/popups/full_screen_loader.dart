@@ -2,7 +2,6 @@ import 'package:app_ban_giay/common/widgets/loader/animation_loader.dart';
 import 'package:app_ban_giay/utils/constants/colors.dart';
 import 'package:app_ban_giay/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
 class TFullScreenLoader {
@@ -20,10 +19,8 @@ class TFullScreenLoader {
           height: double.infinity,
           child: Column(
             children: [
-              const SizedBox(height: 200),
-              SizedBox(
-                child: AnimationLoaderWidget(text: text, animation: animation),
-              ),
+              const SizedBox(height: 250),
+              AnimationLoaderWidget(text: text, animation: animation),
             ],
           ),
         ),

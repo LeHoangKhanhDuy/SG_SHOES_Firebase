@@ -3,7 +3,7 @@ class TFormatException implements Exception {
 
   const TFormatException(
       [this.message =
-          'An unexpected format error ocurred. Please check your input.']);
+          'Đã xảy ra lỗi định dạng không mong muốn. Vui lòng kiểm tra đầu vào của bạn.']);
 
   factory TFormatException.fromMessage(String message) {
     return TFormatException(message);
@@ -14,21 +14,24 @@ class TFormatException implements Exception {
   factory TFormatException.fromCode(String code) {
     switch (code) {
       case 'invalid-email-format':
-        return const TFormatException('Skfjdaklsjaklsdj');
-      case 'invalid-email-format':
-        return const TFormatException('Skfjdaklsjaklsdj');
-      case 'invalid-email-format':
-        return const TFormatException('Skfjdaklsjaklsdj');
-      case 'invalid-email-format':
-        return const TFormatException('Skfjdaklsjaklsdj');
-      case 'invalid-email-format':
-        return const TFormatException('Skfjdaklsjaklsdj');
-      case 'invalid-email-format':
-        return const TFormatException('Skfjdaklsjaklsdj');
-      case 'invalid-email-format':
-        return const TFormatException('Skfjdaklsjaklsdj');
+        return const TFormatException(
+            'Định dạng địa chỉ email không hợp lệ. Vui lòng nhập địa chỉ email hợp lệ.');
+      case 'invalid-phone-number-format':
+        return const TFormatException(
+            'Định dạng số điện thoại được cung cấp không hợp lệ. Vui lòng nhập số điện thoại hợp lệ.');
+      case 'invalid-date-format':
+        return const TFormatException(
+            'Định dạng ngày tháng không hợp lệ. Vui lòng nhập ngày tháng hợp lệ.');
+      case 'invalid-url-format':
+        return const TFormatException(
+            'Định dạng URL không hợp lệ. Vui lòng nhập URL hợp lệ.');
+      case 'invalid-credit-card-format':
+        return const TFormatException(
+            'Định dạng thẻ tín dụng không hợp lệ. Vui lòng nhập số thẻ tín dụng hợp lệ.');
+      case 'invalid-numeric-format':
+        return const TFormatException('Đầu vào phải là định dạng số hợp lệ.');
       default:
-        return const TFormatException('Skfjdaklsjaklsdj');
+        return const TFormatException();
     }
   }
 }

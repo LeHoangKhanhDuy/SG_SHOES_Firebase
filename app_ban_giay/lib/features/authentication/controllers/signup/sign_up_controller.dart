@@ -4,7 +4,7 @@ import 'package:app_ban_giay/data/repositories/user/user_repository.dart';
 import 'package:app_ban_giay/features/authentication/screens/signup/verify_email.dart';
 import 'package:app_ban_giay/features/personalization/models/user_model.dart';
 import 'package:app_ban_giay/utils/helpers/network_manager.dart';
-import 'package:app_ban_giay/utils/popups/full_screen_loader.dart';
+//import 'package:app_ban_giay/utils/popups/full_screen_loader.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -15,7 +15,8 @@ class SignUpController extends GetxController {
   final hidePassword = true.obs;
   final privacyPolicy = true.obs;
   final email = TextEditingController();
-  final fullname = TextEditingController();
+  final firstname = TextEditingController();
+  final lastname = TextEditingController();
   final username = TextEditingController();
   final password = TextEditingController();
   final phoneNumber = TextEditingController();
@@ -33,7 +34,9 @@ class SignUpController extends GetxController {
       if (!isConnected) return;
 
       //Form validation
-      if (!signupFormKey.currentState!.validate()) return;
+      if (!signupFormKey.currentState!.validate()) {
+        return;
+      }
 
       //Privacy Policy
       if (!privacyPolicy.value) {
@@ -46,14 +49,17 @@ class SignUpController extends GetxController {
       }
 
       // //Register user & save
-      final userCredential = await AuthenticationRepository.instance
-          .registerWithEmailAndPassword(
-              email.text.trim(), password.text.trim());
+      final userCredential =
+          await AuthenticationRepository.instance.registerWithEmailAndPassword(
+        email.text.trim(),
+        password.text.trim(),
+      );
 
       //Save auth user data
       final newUser = UserModel(
         id: userCredential.user!.uid,
-        fullName: fullname.text.trim(),
+        firstName: firstname.text.trim(),
+        lastName: lastname.text.trim(),
         username: username.text.trim(),
         email: email.text.trim(),
         phoneNumber: phoneNumber.text.trim(),
@@ -71,7 +77,7 @@ class SignUpController extends GetxController {
       //move to verify email
       Get.to(() => VerifyEmailScreen(email: email.text.trim()));
     } catch (e) {
-      TFullScreenLoader.stopLoading();
+      //TFullScreenLoader.stopLoading();
 
       //Show error
       TLoaders.errorSnackBar(title: 'Opps!', message: e.toString());

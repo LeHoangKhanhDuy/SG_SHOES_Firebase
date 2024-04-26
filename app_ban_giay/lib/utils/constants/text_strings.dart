@@ -1,11 +1,12 @@
-class TTexts{
-
+class TTexts {
   static const String onBoardingTitle1 = "STYLE UP, STAND OUT";
   static const String onBoardingTitle2 = "Nhiều phương thức thanh toán";
   static const String onBoardingTitle3 = "Giao hàng tận nơi";
 
-  static const String onBoardingSubTitle1 = "Chào mừng bạn đến với SG Shoes - Những đôi giày tốt nhất cho chân của bạn";
-  static const String onBoardingSubTitle2 = "Thanh toán đa dạng - Kết hợp với nhiều nền tảng";
+  static const String onBoardingSubTitle1 =
+      "Chào mừng bạn đến với SG Shoes - Những đôi giày tốt nhất cho chân của bạn";
+  static const String onBoardingSubTitle2 =
+      "Thanh toán đa dạng - Kết hợp với nhiều nền tảng";
   static const String onBoardingSubTitle3 = "Đa dạng hình thức vận chuyển";
 
   //Home
@@ -14,12 +15,13 @@ class TTexts{
   static const String storeAppbarTitle = "Cửa hàng";
 
   //Authentication Form Text
-  static const String fullName = "Họ và tên";
+  static const String firstName = "Họ";
+  static const String lastName = "Tên";
   // static const String lastName = "Họ và tên";
   static const String email = "E-mail";
   static const String password = "Mật khẩu";
   static const String confirmPassword = "Nhập lại mật khẩu";
-  static const String newpassword = "Mật khẩu mới"; 
+  static const String newpassword = "Mật khẩu mới";
   static const String username = "Tên tài khoản";
   static const String phoneNo = "Số điện thoại";
   static const String rememberMe = "Nhớ mật khẩu";
@@ -40,7 +42,8 @@ class TTexts{
 
   //Verify email
   static const String confirmEmail = "Xác minh email của bạn!";
-  static const String titleConfirmEmail = "Việc xác minh email tiếp cận nhiều tính năng trên SG Shoes hơn. Hãy nhấn vào nút bên dưới để xác minh email của bạn.";
+  static const String titleConfirmEmail =
+      "Việc xác minh email tiếp cận nhiều tính năng trên SG Shoes hơn. Hãy nhấn vào nút bên dưới để xác minh email của bạn.";
   static const String continueConfirmEmail = "Xác minh email";
   static const String successEmail = "Email của bạn đã được xác minh";
   static const String successEmailTitle = "Chào mừng bạn đến với SG Shoes";
@@ -51,14 +54,15 @@ class TTexts{
 
   //Forget password
   static const String forgetPassTitle = "Quên mật khẩu";
-  static const String forgetPassSubTitle = "Nhập email của bạn để lấy lại mật khẩu";
+  static const String forgetPassSubTitle =
+      "Nhập email của bạn để lấy lại mật khẩu";
   static const String submit = "Gửi";
 
   //Reset password
   static const String changePassTitle = "Kiểm tra Email của bạn";
-  static const String changePassSubTitle = "Vui lòng kiểm tra email của bạn để hoàn thành việc đổi mật khẩu của bạn";
+  static const String changePassSubTitle =
+      "Vui lòng kiểm tra email của bạn để hoàn thành việc đổi mật khẩu của bạn";
   static const String done = "Xong";
-
 
   static const String loginTitle = "SG Shoes";
   static const String loginSubTitle = "Chào mừng bạn đến với SG Shoes";
